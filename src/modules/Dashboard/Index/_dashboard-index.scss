@@ -1,0 +1,31 @@
+.grid-index {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    "a a a b b"
+    "c c c c c"
+    "d d d d d";
+    margin: auto;
+    margin-top: 31px;
+    border-radius: 4px;
+        .area-a {
+            grid-area: a;
+            background-color: whitesmoke;
+        }
+        .area-b {
+            grid-area: b;
+            background-color: yellow;
+        }
+        .area-c {
+            grid-area: c;
+            background-color: red;
+        }
+        .area-d {
+            grid-area: d;            
+            background-color: red
+        }
+}
