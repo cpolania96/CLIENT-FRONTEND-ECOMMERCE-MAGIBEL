@@ -260,19 +260,113 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 5px;
-  grid-template-areas: "a a a b b" "c c c c c" "d d d d d";
+  grid-template-areas: "a a a b b" "c d e f f" "g h h h h";
   margin: auto;
   margin-top: 31px;
   border-radius: 4px; }
+  .grid-index div {
+    border-radius: 4px;
+    position: relative;
+    -webkit-box-shadow: 9px 10px 45px -24px #393739;
+    -moz-box-shadow: 9px 10px 45px -24px #595659;
+    box-shadow: 9px 10px 45px -24px #595659; }
+    .grid-index div .float-ico {
+      position: absolute;
+      top: -16px;
+      left: 9px;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .grid-index .area-a {
     grid-area: a;
     background-color: whitesmoke; }
+    .grid-index .area-a .float-ico {
+      background: linear-gradient(195deg, #42424a, #191919); }
   .grid-index .area-b {
     grid-area: b;
-    background-color: yellow; }
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .grid-index .area-b .float-ico {
+      background: linear-gradient(195deg, #49a3f1, #1a73e8); }
+    .grid-index .area-b .title {
+      height: 32px;
+      width: 37%;
+      top: -4px;
+      left: -31px;
+      display: flex;
+      align-items: center;
+      border-radius: 0;
+      padding-left: 4px;
+      font-size: 1.2rem;
+      color: #7b809a;
+      font-weight: 600; }
+    .grid-index .area-b .amount,
+    .grid-index .area-b .label-info,
+    .grid-index .area-b .date {
+      width: 80%;
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+    .grid-index .area-b .date {
+      height: 11%;
+      font-size: 0.9rem;
+      color: #7b809a; }
+    .grid-index .area-b .amount {
+      color: #191919;
+      height: 24%;
+      font-size: 1.7rem;
+      box-shadow: none;
+      font-weight: bold; }
+    .grid-index .area-b .label-info {
+      height: 11%;
+      font-size: 0.9rem;
+      color: #7b809a; }
+  .grid-index .card-info ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+    .grid-index .card-info ul li {
+      height: 100%;
+      height: 30%;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      position: relative; }
+    .grid-index .card-info ul .title {
+      margin-top: 13px; }
+      .grid-index .card-info ul .title h2 {
+        font-size: 1.2rem;
+        color: #7b809a;
+        font-weight: bold; }
+    .grid-index .card-info ul .date {
+      height: 12%;
+      font-size: 0.9rem;
+      color: #7b809a; }
+    .grid-index .card-info ul .amount {
+      height: 47%; }
+      .grid-index .card-info ul .amount h3 {
+        font-size: 2.7rem;
+        text-shadow: 1px 1px 3px #0000008a; }
   .grid-index .area-c {
     grid-area: c;
-    background-color: red; }
+    background-color: whitesmoke; }
   .grid-index .area-d {
     grid-area: d;
-    background-color: red; }
+    background-color: whitesmoke; }
+  .grid-index .area-e {
+    grid-area: e; }
+  .grid-index .area-f {
+    grid-area: f; }
+  .grid-index .area-g {
+    grid-area: g; }
+  .grid-index .area-h {
+    grid-area: h; }
